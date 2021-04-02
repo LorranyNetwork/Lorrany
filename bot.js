@@ -13,9 +13,9 @@ client.on("message", async message => {
         return message.reply(`Olá! Você descobriu uma coisa secreta... Meu código-fonte: https://github.com/Velosh/Lorran`)}
     if(!message.content.startsWith(config.prefix)) return;
 
-let args = message.content.split(" ").slice(1);
-let command = message.content.split(" ")[0];
-command = command.slice(config.prefix.length);
+    let args = message.content.split(" ").slice(1);
+    let command = message.content.split(" ")[0];
+    command = command.slice(config.prefix.length);
 
   try {
       let commandFile = require(`./modules/${command}.js`);
