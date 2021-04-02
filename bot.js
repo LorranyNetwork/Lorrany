@@ -18,8 +18,8 @@ let command = message.content.split(" ")[0];
 command = command.slice(config.prefix.length);
 
   try {
-      let commandFile = require(`./commands/${command}.js`);
-      delete require.cache[require.resolve(`./commands/${command}.js`)];
+      let commandFile = require(`./modules/${command}.js`);
+      delete require.cache[require.resolve(`./modules/${command}.js`)];
       return commandFile.run(client, message, args);
   } catch (err) {
       console.log("-");
