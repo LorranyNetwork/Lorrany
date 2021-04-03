@@ -1,8 +1,7 @@
 const Discord = require('discord.js')
-const userID = '<@600454770003673088>'
 
 module.exports.run = async (client, message, args) => {
-  if (message.author === userID && !message.member.hasPermission('KICK_MEMBERS')) return message.channel.send(":interrobang: | Você não tem permissão para executar esse comando!")
+  if (!message.member.hasPermission('KICK_MEMBERS')) return message.channel.send(":interrobang: | Você não tem permissão para executar esse comando!")
 
   let member = message.mentions.members.first()
 
