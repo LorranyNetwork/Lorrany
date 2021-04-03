@@ -8,3 +8,6 @@
 • Outros comandos:
 - lo!ping
 - lo!uptime
+
+### Observação
+* O código-fonte deste bot é desatualizado, nas novas atualizações pode precisar de mudanças bruscas, você pode fazer um issue especificamente para eu atualizar o módulo (ou corrigir os problemas, talvez), o título deve começar com: ```[REQUEST]```
