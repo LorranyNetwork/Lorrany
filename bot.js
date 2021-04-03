@@ -10,7 +10,7 @@ client.prefix = config.prefix;
 client.on("message", async message => {
     if (message.author.bot) return;
     if (message.content.startsWith(`<@!${client.user.id}>`) || message.content.startsWith(`<@${client.user.id}>`)) {
-        return message.reply(`Olá! Você descobriu uma coisa secreta... Meu código-fonte: https://github.com/Velosh/Lorran`)
+        return message.reply(`Olá! Você descobriu uma coisa secreta...`)
     }
     if (!message.content.startsWith(config.prefix)) return;
 
