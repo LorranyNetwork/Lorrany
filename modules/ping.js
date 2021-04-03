@@ -7,7 +7,7 @@ module.exports.run = async (client, message, args) => {
         .addField(":robot: | BOT: ", Math.floor(client.ping) + "ms")
         .setFooter(`${message.author.tag}`, message.author.displayAvatarURL)
         .setColor("FFC0CB")
-        message.channel.send(pEmbed)
+    message.channel.send(pEmbed)
 }
 
 module.exports.help = {

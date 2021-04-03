@@ -13,8 +13,8 @@ exports.run = async (client, message, args, prefix) => {
     if (reason > 100) return message.channel.send(":interrobang: | Esse número é acima de 100...")
 
     message.delete()
-    let massagem ="";
-    let viagem ="";
+    let massagem = "";
+    let viagem = "";
 
     message.channel.fetchMessages({
         limit: reason,
@@ -26,12 +26,12 @@ exports.run = async (client, message, args, prefix) => {
         message.channel.bulkDelete(viagem).catch(error => console.log(error.stack))
 
         let pEmbed = new Discord.RichEmbed()
-          .setTitle(":envelope: | **Faxina**")
-          .addField(":oncoming_police_car: | Por: ", `${message.author.tag}`)
-          .setColor("FFC0CB")
+            .setTitle(":envelope: | **Faxina**")
+            .addField(":oncoming_police_car: | Por: ", `${message.author.tag}`)
+            .setColor("FFC0CB")
 
-          message.channel.send(pEmbed)
-     })
+        message.channel.send(pEmbed)
+    })
 }
 
 module.exports.help = {
